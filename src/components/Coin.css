@@ -1,0 +1,89 @@
+.coin-app {
+    background-color: #1a1a1c;
+    color: #fff;
+    padding: 4rem 0;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.coin-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form {
+    width: 300px;
+    margin-bottom: 4rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    background-image: linear-gradient(-225deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%);
+    color: #fff !important;
+}
+
+.search-input::placeholder{
+    color: #fff;
+}
+
+.coin-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 2rem;
+    grid-auto-flow: dense;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    width: 90%;
+    margin: 1rem auto;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1rem;
+}
+
+.crypto-logo {
+    height: 30px;
+    margin-right: 1rem;
+}
+
+.tag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.mcap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cell{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* width: 300px; */
+    margin: 0 1rem;
+}
+
+.symbol{
+    text-transform: uppercase;
+}
+
+.green{
+    color: greenyellow;
+}
+
+.red{
+    color: red;
+}

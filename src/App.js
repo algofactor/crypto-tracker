@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import CoinApp from './components/CoinApp';
 
 function App() {
   return (
     <>
-      <h1>Yoo</h1>
+      <CoinApp />
     </>
   );
 }
