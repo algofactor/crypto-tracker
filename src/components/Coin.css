@@ -36,14 +36,14 @@
 }
 
 .coin-container{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(6, 1fr);
-    column-gap: 2rem;
-    grid-auto-flow: dense;
-    /* display: flex;
+    column-gap: 2rem; */
+    display: flex;
     flex-direction: row;
-    justify-content: center; */
-    width: 90%;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
     margin: 1rem auto;
     border-bottom: 1px solid #fff;
     padding-bottom: 1rem;
@@ -51,14 +51,24 @@
 
 .crypto-logo {
     height: 30px;
-    margin-right: 1rem;
+    margin-right: .5rem;
 }
 
-.tag {
+.tag, .cell {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
     align-items: center;
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
+}
+
+.cell{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
 }
 
 .mcap {
@@ -66,14 +76,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.cell{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    /* width: 300px; */
-    margin: 0 1rem;
 }
 
 .symbol{

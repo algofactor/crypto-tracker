@@ -13,16 +13,14 @@ const CoinApp = () => {
             const response = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false').catch(error => console.log(error));
             const data = await response.json();
             setCoins(data)
-            console.log(data);
         }
         getCoins();
     }, []);
 
     const handleChange = (e) =>{
         setSearch(e.target.value)
-        console.log(filteredCoins)
     }    
-    
+
     const filteredCoins =  coins.filter((coin)=>
         coin.name.toLowerCase().includes(search.toLowerCase())
     )

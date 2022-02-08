@@ -14,7 +14,10 @@ const Coin = ({image, name, symbol, price, priceChange, marketCap, volume}) => {
             <p>${price.toLocaleString()}</p>
           </div>
           <div className="cell">
-            <p>${volume.toLocaleString()}</p>
+            <div className="cell mcap">
+                <p>Volume:</p>
+                <p>${volume.toLocaleString()}</p>
+            </div>            
           </div>
           <div className="cell">
             <p className={priceChange < 0 ? 'red' : 'green'} >{priceChange.toFixed(2)} %</p>
