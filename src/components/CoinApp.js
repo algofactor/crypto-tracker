@@ -25,8 +25,6 @@ const CoinApp = () => {
         coin.name.toLowerCase().includes(search.toLowerCase())
     )
 
-
-
   return (
     <div className="coin-app">
         <div className="coin-search">
@@ -36,7 +34,7 @@ const CoinApp = () => {
             </form>
         </div>
         <div className="coin-details">
-            {filteredCoins.map(coin =>{
+            {filteredCoins.map(coin =>{                
                 return(
                     <Coin image={coin.image} name={coin.name} key={coin.id} symbol={coin.symbol} price={coin.current_price} priceChange={coin.price_change_percentage_24h} marketCap={coin.market_cap} volume={coin.total_volume}  />
                 )
